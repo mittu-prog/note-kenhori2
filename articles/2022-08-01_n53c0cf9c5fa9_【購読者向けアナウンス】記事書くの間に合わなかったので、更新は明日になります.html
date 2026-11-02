@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2cb696">
+    <title>【購読者向けアナウンス】記事書くの間に合わなかったので、更新は明日になります | 堀元 見 noteアーカイブ</title>
+    <link rel="stylesheet" href="../app.css">
+    <style>
+        :root {
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #222222;
+            --muted: #666666;
+            --border: #e5e7eb;
+            --accent: #2cb696;
+            --link: #0066cc;
+            --quote-bg: #f3f4f6;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #121212;
+                --card-bg: #1e1e1e;
+                --text: #e5e7eb;
+                --muted: #9ca3af;
+                --border: #374151;
+                --accent: #2cb696;
+                --link: #60a5fa;
+                --quote-bg: #262626;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.85;
+            font-size: 17px;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 20px 16px 64px;
+        }
+        .top-bar {
+            margin-bottom: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+        .top-bar a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .top-bar a:hover { text-decoration: underline; }
+        article {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px 36px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        @media (max-width: 600px) {
+            article { padding: 20px 16px; }
+        }
+        .eyecatch {
+            margin: -32px -36px 24px -36px;
+            border-radius: 12px 12px 0 0;
+            overflow: hidden;
+        }
+        @media (max-width: 600px) {
+            .eyecatch { margin: -20px -16px 20px -16px; }
+        }
+        .eyecatch img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        h1.article-title {
+            font-size: 24px;
+            line-height: 1.4;
+            margin: 0 0 12px 0;
+        }
+        .meta {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: center;
+        }
+        .meta a { color: var(--muted); }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .tag {
+            background: var(--quote-bg);
+            color: var(--muted);
+            padding: 2px 10px;
+            border-radius: 999px;
+            font-size: 13px;
+        }
+        .article-body p {
+            margin: 0 0 1.5em 0;
+            word-break: break-word;
+        }
+        .article-body h2 {
+            font-size: 21px;
+            margin: 2em 0 0.8em;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--accent);
+        }
+        .article-body h3 {
+            font-size: 18px;
+            margin: 1.6em 0 0.6em;
+        }
+        .article-body figure {
+            margin: 1.8em 0;
+            text-align: center;
+        }
+        .article-body img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+        .article-body figcaption {
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 6px;
+        }
+        .article-body blockquote {
+            margin: 1.5em 0;
+            padding: 16px 20px;
+            background: var(--quote-bg);
+            border-left: 4px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+        }
+        .article-body a {
+            color: var(--link);
+            word-break: break-all;
+        }
+        .embed-link, .embed-source {
+            margin: 12px 0;
+            padding: 12px 16px;
+            background: var(--quote-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .paywall-warning {
+            margin-top: 32px;
+            padding: 20px;
+            background: #fff3cd;
+            color: #664d03;
+            border: 1px solid #ffecb5;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .footer-nav {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .nav-btn {
+            display: inline-block;
+            padding: 12px 16px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            max-width: 48%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .nav-btn:hover {
+            border-color: var(--accent);
+        }
+    </style>
+</head>
+<body data-article-key="n53c0cf9c5fa9">
+    <div class="container">
+        <div class="top-bar">
+            <a href="../index.html">← 記事一覧に戻る</a>
+            <div class="top-bar-right">
+                <span class="sync-status" onclick="window.__noteManualSync()" style="cursor:pointer" title="クリックで今すぐ同期">☁️ 同期確認中</span>
+                <button type="button" id="topReadBtn" class="check-btn" onclick="window.__noteToggleRead('n53c0cf9c5fa9', event)">
+                    <span class="check-icon"></span><span>未読</span>
+                </button>
+                <a href="https://note.com/kenhori2/n/n53c0cf9c5fa9" target="_blank" rel="noopener">元記事 ↗</a>
+            </div>
+        </div>
+        <article>
+            
+            <h1 class="article-title">【購読者向けアナウンス】記事書くの間に合わなかったので、更新は明日になります</h1>
+            <div class="meta">
+                <span>公開日: 2022-08-01 12:11</span>
+                <span>スキ: ♥ 44</span>
+                <span>ID: n53c0cf9c5fa9</span>
+            </div>
+            
+            <div class="article-body" data-enc="K0oIwypZRZNdZZyiWoJiAqvkxVWVaMIthzRrouwkB4oefVD23Ahahj3QJwyoep9A3ky82qOxp1kAC9eeyDsmsGCmUmTk0LaA5BZsj6Ux50tzIC0cSpjI0w76YSNZjLeimCqeMNoAEd2KmLVg7Ru7eONFR/J2gbVBNcSgo1w7/Xzet39dyu05KyhEro9flcPO6QPAZry+CEwQ5Gye+TDfNy2xW9a+zIIAQs99Y+5ssDjX/TaCVAvSvIq5JSzPobzo63u1F88t8pZLYT5lC0gXhCigNTIHvyaEZ2FdAeB0/laF05zdjU2zLNWYZp+QTMNB8SQV5o2qmjzPD2cYiv1FJSyZ7jqGZVCvfL6tb/zwkCeoUhYEhf2IeFtWWpGUQYRv+SN4rAxtIKA9gx2M3kG36O+p0aV9TYtAlVFFT8P2UI5mhGhOxNxPSZYc9i+N4retqGQ2ExvsI5oHbL6fpnnVcfaJFlwGfqdgJ+tTQ7QA8NYCDcnlDbII53ZP6+ooJbzuna40oTmPGuRfIze1c84OsquzJZJkX/VRYfJ8AwruTt2x9R4UM+R5"></div>
+            
+            <div class="article-read-box">
+                <button type="button" id="bottomReadBtn" class="article-read-btn-large" onclick="window.__noteToggleRead('n53c0cf9c5fa9', event)">
+                    ✓ この記事を「読了」にする
+                </button>
+                <span class="article-read-hint">チェック状態はPC・スマホ間で自動共有されます</span>
+            </div>
+        </article>
+        <div class="footer-nav">
+            <a class="nav-btn" href="2022-05-23_nc959fa52cb24_【購読者向けアナウンス】記事がまとまらなかったので明日更新します.html">← 前の記事</a>
+            <a class="nav-btn" href="../index.html" style="text-align:center">一覧へ戻る</a>
+            <a class="nav-btn" href="2022-12-26_n0f4d95e0aa07_【お詫び】地獄の年末が押し寄せているので更新を延期します。12月30日（金）を臨時更新日とします。.html">次の記事 →</a>
+        </div>
+    </div>
+    <script src="../local_key.js" onerror=""></script>
+    <script src="../app.js"></script>
+</body>
+</html>

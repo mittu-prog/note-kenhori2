@@ -1,0 +1,9 @@
+{
+  "name": "堀元 見 メンバーシップ記事アーカイブ",
+  "short_name": "堀元見note",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#2cb696",
+  "description": "堀元見の炎上するから有料で書く話 アーカイブ＆既読管理"
+}
